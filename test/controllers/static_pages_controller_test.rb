@@ -1,3 +1,4 @@
+
 require './test/test_helper'
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
@@ -29,4 +30,6 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
       assert_response :success
       assert_select "title", "About | #{@base_title}"
     end
+
   end
+
